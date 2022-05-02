@@ -9,9 +9,35 @@
 
 }
 #page2{
+  background: url("../images/classroom_edit.jpg") no-repeat;
+  height: 594px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+#page3{
+  background: url("../images/graduation_edit.jpg") no-repeat;
+  height: 40px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+}
 
+.container-fluid-navbar{
+  color: white;
+  background-color: #015568;
+  text-align: center;
+}
+.container-fluid-footer{
+  color:white;
+  background-color: #015568;
+  text-align: center;
 }
 body{
+
+
+
   /* background-color: yellow;
   color: blue; */
 
