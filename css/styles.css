@@ -1,0 +1,32 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap'); */
+
+#page1{
+  background: url("../images/sac.gif") no-repeat;
+  height: 590px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+}
+#page2{
+
+}
+body{
+  /* background-color: yellow;
+  color: blue; */
+
+}
+
+/* h1{
+  font-family: 'Water Brush';
+  color: white ;
+  margin: 600px;
+} */
+
+/* .sidebar {
+  color: red;
+  margin: 100px;
+}
+.css-box-shadow{
+  Paste from google
+} */
