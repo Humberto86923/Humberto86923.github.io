@@ -4,19 +4,105 @@
 
   /* body div { border: 1px solid red; } */
 
-  h1,h2,h3{
+  h1 {
     color: white ;
-    text-align: center;
+    margin-left: 500px;
+    font-family: IM FELL French Canon SC;
+  }
+  h5 {
+    color: white;
+    font-family: IM FELL French Canon SC;
+}
+  h2,h3 {
+    font-family: IM FELL French Canon SC;
   }
 
-  p6{
-margin: 100px;
+
+#first{
+  font-size: 20px;
+  font-family: Inter;
 }
+#second{
+  font-size: 20px;
+  font-family: Inter;
+  color: white;
+}
+#third{
+  font-size: 20px;
+  font-family: Inter;
+}
+  .button2 {
+  background-color: #D06828;
+  font-family:IM FELL French Canon SC; /* Green */
+  border: none;
+  border-radius: 30px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 20px 20px 0px;
+  cursor: pointer;
+  margin: 0;
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);}
+
+  .button1 {
+background-color: #D06828; /* Green */
+font-family: IM FELL French Canon SC;
+border: none;
+border-radius: 30px;
+color: white;
+padding: 20px;
+text-align: center;
+display: inline-block;
+font-size: 30px;
+margin: 20px 20px 10px 0px;
+cursor: pointer;
+margin: 0;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);}
+
+/* .opera{
+position: relative;
+left: 450px;
+bottom: 240px;
+}
+.crowd{
+position: relative;
+left: 150px
+} */
+
 .container-fluid-navbar{
   color: white;
   background-color: #015568;
   text-align: center;
 }
+
+.container-fluid-studentlife{
+  background-color: #015568;
+}
+/* .football{
+  position: relative;
+  left: 50px;
+  top: 150px;
+}
+.soccer{
+  position: relative;
+  left: 1000px;
+  bottom: 300px;
+}
+.tennis{
+  position: relative;
+  left: 1200px;
+  bottom: 495px;
+} */
 </style>
   <head>
     <title>Home Page Sacramento State</title>
@@ -33,27 +119,32 @@ margin: 100px;
     <div class="container-fluid-navbar">
       <div class="row">
 
-        <div class="col-3 border ">
-          <img src="images/Sac_Logo.png"
+        <div class="col-sm-3 border ">
+          <a href="index.html"><img src="images/Sac_Logo.png"
           alt="Sac state logo"
           class="img-fluid"
           />
+        </a>
         </div>
 
-        <div class="col-1 border">
-          <p1>Programs</p1>
+        <div class="col-sm-1 border">
+          <a href="Programs.html">
+            <button class="nav-button">Programs</button>
+          </a>
         </div>
 
-        <div class="col-1 border">
-          <p2>Student Life</p2>
+        <div class="col-sm-1 border">
+          <a href="Explore.html">
+            <button class="nav-button">Student Life</button>
+          </a>
         </div>
 
-        <div class="col-1 border">
-          <p3>Athletics</p3>
+        <div class="col-sm-1 border">
+          <button class="nav-button">Athletics</button>
         </div>
 
-        <div class="col-1 border">
-          <p4>Events</p4>
+        <div class="col-sm-1 border">
+          <button class="nav-button">Events</button>
         </div>
 
         <div class="col-5 border">
@@ -74,13 +165,14 @@ margin: 100px;
 
           <h1 style="font-size:128px">
           Welcome</h1>
+
+          <button class="button button1">Student Life</button>
           <br><br>
-          <h2 style="font-size:40px">
-          Student Life</h2>
-          <br><br>
-          <h3 style="font-size:30px">
-            Majors & Departments</h3>
-          <br><br><br><br><br><br>
+
+          <button class="button button2">Majors & Departments</button>
+          <br><br><br><br><br><br></br></br></br>
+        </br>
+
 
                 </div>
               </div>
@@ -90,11 +182,10 @@ margin: 100px;
                     <div class="container-fluid">
                       <div class="row">
                         <div class="col-sm-6">
-                          <h4><b>Meet The Family</b></h4>
-                          <br></br></br></br>
+                          <h2 style="font-size:45px">Meet The Family</h2>
+                          <br></br></br>
 
                           <img src="images/woman_graduate_edit.jpg"
-
                           alt="Elizabeth Sanchez Graduate"
                           title="Elizabeth Sanchez is getting her degree for Biology "
                           class="img-fluid"
@@ -103,21 +194,23 @@ margin: 100px;
                           align="right"
                           />
 
-
-
                         </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
-                      <p6>
-                        <b>Elizabeth Sanchez (B.A. Biology)</b> </br>
+
+                        <p id="first">
+                          <b>Elizabeth Sanchez (B.A. Biology)</b>
+                        </br>
                         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
                         The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
                         Many desktop publishing packages and web page editors now use Lorem Ipsum as their default
-                      </p6>
+                      </p>
 
 
                           <br></br><br></br><br></br>
                         </div>
+
                         <div class="col-sm-6">
                           <br></br></br></br></br>
+
                           <img src="images/nelsen_edit.jpg"
                           alt="President Nelsen"
                           title="Sacramento State's President Nelsen "
@@ -126,14 +219,15 @@ margin: 100px;
                           height="434px"
                           />
                         </br>
-                        <p>
-                        </br>  <b>President Nelsen</b>
+
                         </br>
-                        <p5>
+                        <p id="first">
+                        <b>President Nelsen</b>
+                        </br>
                           It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
                           The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
                           Many desktop publishing packages and web page editors now use Lorem Ipsum as their default
-                        </p5>
+                        </p>
                           <br></br></br></br>
 
                         </div>
@@ -141,13 +235,14 @@ margin: 100px;
                         <div class="container-fluid-studentlife">
                           <div class="row">
 
-                            <div class="col-sm-3 border">
-                              </br></br></br></br>
-                              <h5><b>Student Life</b></h5>
-
+                            <div class="col-sm-6 border">
+                              </br></br></br>
+                              <h5 style="font-size: 45px">Student Life</h5>
                             </br>
+
+                              <div class="crowd">
                               <img src="images/football_crowd_edit.jpg"
-                              align="right"
+
                               width="230px"
                               height="244px"
                               alt="football crowd"
@@ -155,26 +250,24 @@ margin: 100px;
                               class="img-fluid" />
                             </div>
 
-                            <div class="col-sm-3 border">
-
-                            </br></br></br></br></br></br>
+                              <div class="opera">
                               <img src="images/College_Opera_edit.jpg"
-                              align="left"
+                              align="right"
                               width="230px"
                               height="244px"
                               alt="Student Opera Show"
                               title="Student led opera show "
-                              class="img-fluid" />
+                              class="float-right" />
                             </div>
-                            </br></br></br></br></br>
-
+                            </div>
 
                             <div class="col-sm-6 border">
                               </br></br></br></br></br></br>
-                              <p6>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                              The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                              <p id="second">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                              The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                              of letters, as opposed to using 'Content here, content here', making it look like readable English.
                               Many desktop publishing packages and web page editors now use Lorem Ipsum as their default
-                            </p6>
+                            </p>
 
 
                             </div>
@@ -186,48 +279,57 @@ margin: 100px;
                               <div class="row">
 
                                 <div class="col-sm-6 border">
-                                  </br></br></br></br></br>
-                                  <h4><b>Athletics</b></h4>
+                                  </br></br></br>
+                                  <h3 style="font-size: 45px">Athletics</h3>
                                 </br>
-                                  <p7>
+                                  <p id="third">
                                     It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
                                     The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
                                     Many desktop publishing packages and web page editors now use Lorem Ipsum as their default
-                                  </p7>
-                                  <br></br><br></br><br></br>
+                                  </p>
+                                  <br></br><br></br>
                                 </div>
 
-                                <div class="col-sm-2 border"
+
+                                <div class="col-sm-6 border">
+
+
+                                  <!-- <div class="football"> -->
+
                                   <img src="images/football_players_edit.jpg"
-                                  align="right"
+                                  align="left"
                                   width="144"
                                   height="199px"
                                   alt="Football Player"
                                   title="Football Player catches ball"
-                                  class="img-fluid" />
-                                </div>
+                                  class="float-left" />
+                                <!-- </div> -->
+                                <!-- </div> -->
 
-                                <div class="col-sm-2 border">
+                                <!-- <div class="soccer"> -->
                                   <img src="images/soccer_edit.jpg"
                                   align="center"
                                   width="144px"
                                   height="199px"
                                   alt="Soccer Player"
                                   title="Soccer Player celebrates goal "
-                                  class="img-fluid" />
-                                </div>
+                                  class="mx-auto d-block" />
+                                <!-- </div> -->
 
-                                <div class="col-sm-2 border">
+
+                                <!-- <div class ="tennis"> -->
                                   <img src="images/tennis_edit.jpg"
-                                  align="left"
+                                  align="right"
                                   width="144px"
                                   height="199px"
                                   alt="Tennis Player"
                                   title="Tennis Player gets ready for a game "
-                                  class="img-fluid" />
-                                  <br></br><br></br><br></br>
+                                  class="float-right" />
 
                                 </div>
+                                <!-- </div> -->
+                                </div>
+                              </div>
 
 
 
