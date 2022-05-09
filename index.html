@@ -6,8 +6,8 @@
 
   h1 {
     color: white ;
-    margin-left: 500px;
     font-family: IM FELL French Canon SC;
+    text-align: center;
   }
   h5 {
     color: white;
@@ -16,11 +16,66 @@
   h2,h3 {
     font-family: IM FELL French Canon SC;
   }
+  .nav-button {
+    background-color: #015568;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 25px;
+    margin: 0px 60px 0px 30px ;
+    cursor: pointer;
+    font-family:IM FELL French Canon SC;
+  }
+
+
+  .collapsible {
+  background-color: #D06828;
+  color: white;
+  float:right;
+  cursor: pointer;
+  padding: 20px;
+  width: 15%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-family: IM FELL French Canon SC;
+}
+
+.active, .collapsible:hover {
+  background-color: #A85421;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  width: 15%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background-color: white;
+  float: right;
+}
 
 
 #first{
   font-size: 20px;
   font-family: Inter;
+  margin-left: 200px;
+
 }
 #second{
   font-size: 20px;
@@ -48,7 +103,8 @@
   top: 110%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);}
+  transform: translate(-50%, -50%);
+}
 
   .button1 {
 background-color: #D06828; /* Green */
@@ -67,7 +123,8 @@ margin: 0;
   top: 90%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);}
+  transform: translate(-50%, -50%);
+}
 
 /* .opera{
 position: relative;
@@ -83,6 +140,7 @@ left: 150px
   color: white;
   background-color: #015568;
   text-align: center;
+  font-family:IM FELL French Canon SC;
 }
 
 .container-fluid-studentlife{
@@ -119,38 +177,37 @@ left: 150px
     <div class="container-fluid-navbar">
       <div class="row">
 
-        <div class="col-sm-3 border ">
-          <a href="index.html"><img src="images/Sac_Logo.png"
+        <div class="col-sm-12 border ">
+          <a href="index.html">
+            <img src="images/Sac_Logo.png"
           alt="Sac state logo"
           class="img-fluid"
-          />
-        </a>
-        </div>
+          width="300px"
+          height="120px"
+            />
+          </a>
 
-        <div class="col-sm-1 border">
+
+
           <a href="Programs.html">
             <button class="nav-button">Programs</button>
           </a>
-        </div>
 
-        <div class="col-sm-1 border">
           <a href="Explore.html">
-            <button class="nav-button">Student Life</button>
+            <button class="nav-button">
+              Student Life
+            </button>
           </a>
-        </div>
 
-        <div class="col-sm-1 border">
-          <button class="nav-button">Athletics</button>
-        </div>
+          <button class="nav-button">
+            Athletics
+          </button>
 
-        <div class="col-sm-1 border">
-          <button class="nav-button">Events</button>
-        </div>
+          <button class="nav-button">
+            Events
+          </button>
 
-        <div class="col-5 border">
-          <div class="topnav">
-            <input type="text" placeholder="Search..">
-        </div>
+          <input type="text" placeholder="Search..">
 
           </div>
           </div>
@@ -165,6 +222,16 @@ left: 150px
 
           <h1 style="font-size:128px">
           Welcome</h1>
+          <button class="collapsible">Quick Links</button>
+            <div class="content">
+              <p>
+              Student Center<br>
+              Canvas<br>
+              Library<br>
+              Bookstore<br>
+              COVID-19<br>
+              </p>
+            </div>
 
           <button class="button button1">Student Life</button>
           <br><br>
@@ -189,8 +256,8 @@ left: 150px
                           alt="Elizabeth Sanchez Graduate"
                           title="Elizabeth Sanchez is getting her degree for Biology "
                           class="img-fluid"
-                          width="536px"
-                          height="434px"
+                          width="536"
+                          height="434"
                           align="right"
                           />
 
@@ -198,7 +265,7 @@ left: 150px
 
                         <p id="first">
                           <b>Elizabeth Sanchez (B.A. Biology)</b>
-                        </br>
+                        <br>
                         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
                         The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
                         Many desktop publishing packages and web page editors now use Lorem Ipsum as their default
@@ -215,8 +282,8 @@ left: 150px
                           alt="President Nelsen"
                           title="Sacramento State's President Nelsen "
                           class="img-fluid"
-                          width="536px"
-                          height="434px"
+                          width="536"
+                          height="434"
                           />
                         <br>
 
@@ -231,6 +298,8 @@ left: 150px
                           <br><br><br><br>
 
                         </div>
+                      </div>
+                    </div>
 <!-- Student Life -->
                         <div class="container-fluid-studentlife">
                           <div class="row">
@@ -243,8 +312,8 @@ left: 150px
                               <div class="crowd">
                               <img src="images/football_crowd_edit.jpg"
 
-                              width="230px"
-                              height="244px"
+                              width="230"
+                              height="244"
                               alt="football crowd"
                               title="Showing their support for their team "
                               class="img-fluid" />
@@ -253,8 +322,8 @@ left: 150px
                               <div class="opera">
                               <img src="images/College_Opera_edit.jpg"
                               align="right"
-                              width="230px"
-                              height="244px"
+                              width="230"
+                              height="244"
                               alt="Student Opera Show"
                               title="Student led opera show "
                               class="float-right" />
@@ -299,7 +368,7 @@ left: 150px
                                   <img src="images/football_players_edit.jpg"
                                   align="left"
                                   width="144"
-                                  height="199px"
+                                  height="199"
                                   alt="Football Player"
                                   title="Football Player catches ball"
                                   class="float-left" />
@@ -309,8 +378,8 @@ left: 150px
                                 <!-- <div class="soccer"> -->
                                   <img src="images/soccer_edit.jpg"
                                   align="center"
-                                  width="144px"
-                                  height="199px"
+                                  width="144"
+                                  height="199"
                                   alt="Soccer Player"
                                   title="Soccer Player celebrates goal "
                                   class="mx-auto d-block" />
@@ -320,8 +389,8 @@ left: 150px
                                 <!-- <div class ="tennis"> -->
                                   <img src="images/tennis_edit.jpg"
                                   align="right"
-                                  width="144px"
-                                  height="199px"
+                                  width="144"
+                                  height="199"
                                   alt="Tennis Player"
                                   title="Tennis Player gets ready for a game "
                                   class="float-right" />
@@ -365,6 +434,28 @@ left: 150px
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+
+    </script>
+
+    <script>
+
+    var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+
+    </script>
+
   </body>
 </html>

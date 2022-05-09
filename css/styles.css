@@ -17,11 +17,10 @@
 }
 #page3{
   background: url("../images/graduation_edit.jpg") no-repeat;
-  height: 225px;
+  height: 590px;
   background-size: cover;
   background-position: center;
   position: relative;
-}
 }
 
 .container-fluid-navbar{
@@ -34,17 +33,17 @@
   background-color: #015568;
   text-align: center;
 }
-.nav-button{
-  background-color: #015568; /* Green */
+/* .nav-button{
+  background-color: #015568;
   border: none;
   color: white;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 20px;
+  margin: 4px 25px;
   cursor: pointer;
-}
+} */
 
 body{
 
