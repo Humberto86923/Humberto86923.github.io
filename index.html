@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 <style>
 
   /* body div { border: 1px solid red; } */
@@ -12,9 +12,19 @@
   h5 {
     color: white;
     font-family: IM FELL French Canon SC;
+    position: absolute;
+    left: 190px;
 }
-  h2,h3 {
+  h2 {
     font-family: IM FELL French Canon SC;
+    position: absolute;
+    left: 210px;
+
+  }
+  h3{
+    font-family: IM FELL French Canon SC;
+    position: absolute;
+    left: 190px;
   }
   .nav-button {
     background-color: #015568;
@@ -75,16 +85,34 @@
   font-size: 20px;
   font-family: Inter;
   margin-left: 200px;
-
+  text-align: left;
 }
 #second{
   font-size: 20px;
   font-family: Inter;
-  color: white;
+  padding-right: 100px;
+  text-align: left;
+  margin-left: 100px;
+
 }
 #third{
   font-size: 20px;
   font-family: Inter;
+  color: white;
+  text-align: left;
+  position: relative;
+  left: 600px;
+  bottom: 200px;
+  margin-right: 700px;
+}
+#fourth{
+  font-size: 20px;
+  font-family: Inter;
+  position: relative;
+  margin-top: 20px;
+  left: 170px;
+  margin-right: 950px;
+  text-align: left;
 }
   .button2 {
   background-color: #D06828;
@@ -100,7 +128,7 @@
   cursor: pointer;
   margin: 0;
   position: absolute;
-  top: 110%;
+  top: 90%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -120,21 +148,23 @@ margin: 20px 20px 10px 0px;
 cursor: pointer;
 margin: 0;
   position: absolute;
-  top: 90%;
+  top: 70%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
-/* .opera{
+.opera{
 position: relative;
-left: 450px;
+left: 190px;
 bottom: 240px;
+top: -200px;
 }
 .crowd{
 position: relative;
-left: 150px
-} */
+left: -130px;
+top: 40px;
+}
 
 .container-fluid-navbar{
   color: white;
@@ -146,48 +176,284 @@ left: 150px
 .container-fluid-studentlife{
   background-color: #015568;
 }
-/* .football{
+.football{
   position: relative;
-  left: 50px;
-  top: 150px;
+  left: 100px;
+  top: -215px;
 }
 .soccer{
   position: relative;
-  left: 1000px;
-  bottom: 300px;
+  left: 300px;
+  bottom: 415px;
 }
 .tennis{
   position: relative;
-  left: 1200px;
-  bottom: 495px;
-} */
+  left: 500px;
+  bottom: 615px;
+}
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 160px;
+  height: 160px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #015568;
+  border-radius: 50%;
+  border-top: 16px solid #D06828;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+.hero {
+  background-image: url("images/sac.gif");
+  background-repeat: no-repeat;
+  height: 590px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.learnmore {
+  border-radius: 3px;
+  background-color: white;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 22px;
+  padding: 10px;
+  width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  position: relative;
+  right: 115px;
+
+}
+
+.learnmore span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.learnmore span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.learnmore:hover span {
+  padding-right: 25px;
+  color: #D06828;
+}
+
+.learnmore:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.learnmore2 {
+  border-radius: 3px;
+  background-color: white;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 22px;
+  padding: 10px;
+  width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  position: relative;
+  right: 210px;
+
+}
+
+.learnmore2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.learnmore2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.learnmore2:hover span {
+  padding-right: 25px;
+  color: #D06828;
+}
+
+.learnmore2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+.learnmore3 {
+  border-radius: 3px;
+  background-color: #015568;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 22px;
+  padding: 10px;
+  width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  position: relative;
+  left: 10px;
+  bottom: 200px;
+
+}
+
+.learnmore3 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.learnmore3 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.learnmore3:hover span {
+  padding-right: 25px;
+  color: #D06828;
+}
+
+.learnmore3:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.learnmore4 {
+  border-radius: 3px;
+  background-color: white;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 22px;
+  padding: 10px;
+  width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  position: relative;
+  left: 85px;
+  top: 50px;
+
+}
+
+.learnmore4 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.learnmore4 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.learnmore4:hover span {
+  padding-right: 25px;
+  color: #D06828;
+}
+
+.learnmore4:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
 </style>
+
   <head>
     <title>Home Page Sacramento State</title>
     <link href="css/styles.css" type="text/css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- links to style sheets, google fonts, etc. go here -->
-
   </head>
-  <body id="page1">
+
+  <body onload="myFunction()" style="margin:0;">
+
+    <div id="loader"></div>
+
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+
 <!-- Navbar -->
 
     <div class="container-fluid-navbar">
       <div class="row">
 
-        <div class="col-sm-12 border ">
+        <div class="col-sm-12">
           <a href="index.html">
             <img src="images/Sac_Logo.png"
           alt="Sac state logo"
           class="img-fluid"
-          width="300px"
-          height="120px"
+          width="300"
+          height="120"
             />
           </a>
-
-
 
           <a href="Programs.html">
             <button class="nav-button">Programs</button>
@@ -213,15 +479,23 @@ left: 150px
           </div>
         </div>
 
+
     <!--Hero Image/Text  -->
+
+
     <div class="container-fluid">
       <div class="row">
-        <div class="col border">
+        <div class="col">
+
+
+          <div class="hero">
+
 
           <br><br><br><br><br><br><br><br><br>
 
           <h1 style="font-size:128px">
           Welcome</h1>
+
           <button class="collapsible">Quick Links</button>
             <div class="content">
               <p>
@@ -232,6 +506,10 @@ left: 150px
               COVID-19<br>
               </p>
             </div>
+
+            <div class="loader">
+            </div>
+
 
           <button class="button button1">Student Life</button>
           <br><br>
@@ -244,11 +522,16 @@ left: 150px
                 </div>
               </div>
             </div>
+          </div>
 
 <!-- Meet The Family -->
+
+
+
                     <div class="container-fluid">
                       <div class="row">
                         <div class="col-sm-6">
+                          <br><br><br>
                           <h2 style="font-size:45px">Meet The Family</h2>
                           <br><br><br>
 
@@ -261,22 +544,26 @@ left: 150px
                           align="right"
                           />
 
-                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
                         <p id="first">
+
                           <b>Elizabeth Sanchez (B.A. Biology)</b>
                         <br>
                         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
                         The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
                         Many desktop publishing packages and web page editors now use Lorem Ipsum as their default
                       </p>
+                      <button class="learnmore"><span><b>learn more</b> </span></button>
+
 
 
                           <br><br><br><br><br><br>
-                        </div>
+                    </div>
+
 
                         <div class="col-sm-6">
-                          <br><br><br><br><br>
+                          <br><br><br><br><br><br>
 
                           <img src="images/nelsen_edit.jpg"
                           alt="President Nelsen"
@@ -288,13 +575,14 @@ left: 150px
                         <br>
 
                         <br>
-                        <p id="first">
+                        <p id="second">
                         <b>President Nelsen</b>
                         <br>
                           It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
                           The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
                           Many desktop publishing packages and web page editors now use Lorem Ipsum as their default
                         </p>
+                        <button class="learnmore2"><span><b>learn more</b> </span></button>
                           <br><br><br><br>
 
                         </div>
@@ -304,10 +592,10 @@ left: 150px
                         <div class="container-fluid-studentlife">
                           <div class="row">
 
-                            <div class="col-sm-6 border">
+                            <div class="col-sm-12">
                               <br><br><br>
                               <h5 style="font-size: 45px">Student Life</h5>
-                            <br>
+                            <br><br>
 
                               <div class="crowd">
                               <img src="images/football_crowd_edit.jpg"
@@ -319,24 +607,26 @@ left: 150px
                               class="img-fluid" />
                             </div>
 
+
                               <div class="opera">
                               <img src="images/College_Opera_edit.jpg"
-                              align="right"
+                              align="left"
                               width="230"
                               height="244"
                               alt="Student Opera Show"
                               title="Student led opera show "
-                              class="float-right" />
-                            </div>
+                              class="img-fluid" />
                             </div>
 
-                            <div class="col-sm-6 border">
-                              <br><br><br><br><br><br>
-                              <p id="second">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+
+
+
+                              <p id="third">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
                               The point of using Lorem Ipsum is that it has a more-or-less normal distribution
                               of letters, as opposed to using 'Content here, content here', making it look like readable English.
                               Many desktop publishing packages and web page editors now use Lorem Ipsum as their default
                             </p>
+                            <button class="learnmore3"><span><b>learn more</b> </span></button>
 
 
                             </div>
@@ -347,80 +637,69 @@ left: 150px
                             <div class="container-fluid">
                               <div class="row">
 
-                                <div class="col-sm-6 border">
+                                <div class="col-sm-12">
                                   <br><br><br>
                                   <h3 style="font-size: 45px">Athletics</h3>
-                                <br>
-                                  <p id="third">
+                                <br><br>
+                                  <p id="fourth">
                                     It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
                                     The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
                                     Many desktop publishing packages and web page editors now use Lorem Ipsum as their default
                                   </p>
-                                  <br><br><br><br>
-                                </div>
+                                  <button class="learnmore4"><span><b>learn more</b> </span></button>
 
-
-                                <div class="col-sm-6 border">
-
-
-                                  <!-- <div class="football"> -->
-
+                                  <div class="football">
                                   <img src="images/football_players_edit.jpg"
-                                  align="left"
                                   width="144"
                                   height="199"
                                   alt="Football Player"
                                   title="Football Player catches ball"
-                                  class="float-left" />
-                                <!-- </div> -->
+                                   />
+                                </div>
                                 <!-- </div> -->
 
-                                <!-- <div class="soccer"> -->
+                                <div class="soccer">
                                   <img src="images/soccer_edit.jpg"
-                                  align="center"
                                   width="144"
                                   height="199"
                                   alt="Soccer Player"
                                   title="Soccer Player celebrates goal "
-                                  class="mx-auto d-block" />
-                                <!-- </div> -->
+                                   />
+                                </div>
 
 
-                                <!-- <div class ="tennis"> -->
+                                <div class ="tennis">
                                   <img src="images/tennis_edit.jpg"
-                                  align="right"
                                   width="144"
                                   height="199"
                                   alt="Tennis Player"
                                   title="Tennis Player gets ready for a game "
-                                  class="float-right" />
+                                   />
+                                </div>
 
                                 </div>
-                                <!-- </div> -->
                                 </div>
                               </div>
-
-
 
 <!--Footer  -->
 
                                 <div class="container-fluid-footer">
                                   <div class="row">
 
-                                    <div class="col-4 border">
+                                    <div class="col-4">
                                       California State University, Sacramento<br>
                                       6000 J Street, Sacramento, CA 95819<br>
                                       Campus Main Phone: (916) 278-6011<br>
                                     </div>
 
-                                    <div class="col-4 border">
+                                    <div class="col-4">
                                       <img src="images/Sac_Logo.png"
                                       alt="Sac state logo"
                                       class="img-fluid"
                                       />
                                     </div>
 
-                                    <div class="col-4 border">
+                                    <div class="col-4">
                                     Contact Us<br>
                                     Maps & Directions<br>
                                     Jobs<br>
@@ -428,18 +707,20 @@ left: 150px
                                 </div>
                               </div>
 
+                            </div>
 
 
 
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
 
-    </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
 
-    <script>
+</script>
 
+
+<script>
     var coll = document.getElementsByClassName("collapsible");
 var i;
 
@@ -454,8 +735,33 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+</script>
 
-    </script>
+
+<script>
+
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 1000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js">
+</script>
+ <script>
+   AOS.init();
+ </script>
+
+
+
 
   </body>
 </html>
