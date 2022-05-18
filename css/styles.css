@@ -8,25 +8,26 @@
   position: relative;
 } */
 
-#page2{
+/* #page2{
   background: url("../images/classroom_edit.jpg") no-repeat;
   height: 594px;
   background-size: cover;
   background-position: center;
   position: relative;
-}
-#page3{
+} */
+/* #page3{
   background: url("../images/graduation_edit.jpg") no-repeat;
   height: 590px;
   background-size: cover;
   background-position: center;
   position: relative;
-}
+} */
 
 .container-fluid-navbar{
   color: white;
   background-color: #015568;
   text-align: center;
+
 }
 .container-fluid-footer{
   color:white;
