@@ -133,8 +133,8 @@
   left: 170px;
   margin-right: 950px;
   text-align: left;
-}
-  .button2 {
+ }
+.button2 {
   background-color: #D06828;
   font-family:IM FELL French Canon SC; /* Green */
   border: none;
@@ -154,24 +154,24 @@
   transform: translate(-50%, -50%);
 }
 
-  .button1 {
-background-color: #D06828; /* Green */
-font-family: IM FELL French Canon SC;
-border: none;
-border-radius: 30px;
-color: white;
-padding: 20px;
-text-align: center;
-display: inline-block;
-font-size: 30px;
-margin: 20px 20px 10px 0px;
-cursor: pointer;
-margin: 0;
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+.button1 {
+  background-color: #D06828; /* Green */
+  font-family: IM FELL French Canon SC;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 30px;
+  margin: 20px 20px 10px 0px;
+  cursor: pointer;
+  margin: 0;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .opera{
@@ -216,7 +216,7 @@ top: 40px;
 .hero {
   background-image: url("images/sac.gif");
   background-repeat: no-repeat;
-  height: 590px;
+  height: 600px;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -403,13 +403,14 @@ top: 40px;
 .nelsen{
   margin-left: 20px;
 }
+
 </style>
 
   <head>
     <title>Home Page Sacramento State</title>
     <link href="css/styles.css" type="text/css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- links to style sheets, google fonts, etc. go here -->
   </head>
@@ -502,6 +503,11 @@ top: 40px;
 
 <!-- Meet The Family -->
 
+<div class="div"
+data-aos="fade-right"
+data-aos-duration="1000"
+data-aos-offset="300"
+>
 
 
                     <div class="container-fluid">
@@ -569,7 +575,17 @@ top: 40px;
                         </div>
                       </div>
                     </div>
+
+                  </div>
 <!-- Student Life -->
+
+<div class="div"
+data-aos="fade-left"
+data-aos-duration="1000"
+data-aos-offset="300"
+>
+
+
                         <div class="container-fluid-studentlife">
                           <div class="row">
 
@@ -619,7 +635,16 @@ top: 40px;
                           </div>
                         </div>
 
+                      </div>
+
 <!-- Athletics Section -->
+
+<div class="div"
+data-aos="fade-right"
+data-aos-duration="1000"
+data-aos-offset="300"
+>
+
                             <div class="container-fluid">
                               <div class="row">
 
@@ -666,6 +691,8 @@ top: 40px;
                                 </div>
                                 </div>
                               </div>
+
+                            </div>
 
 <!--Footer  -->
 
@@ -723,22 +750,6 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 </script>
-
-
-<script>
-
-var myVar;
-
-function myFunction() {
-  myVar = setTimeout(showPage, 1000);
-}
-
-function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("myDiv").style.display = "block";
-}
-</script>
-
 
 
 <script src="https://unpkg.com/aos@next/dist/aos.js">

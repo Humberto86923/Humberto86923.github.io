@@ -18,22 +18,10 @@
 
 
 </style>
-
   <head>
     <title>Animate On Scroll</title>
-      <link href="css/styles.css" type="text/css" rel="stylesheet" />
-      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
    </head>
-
-
-   <body onload="myFunction()" style="margin:0;">
-
-   <div id="loader"></div>
-
-  
-
-
    <body>
 
 
@@ -54,6 +42,7 @@
         data-aos-offset="250"
         >
 
+      <figure>
         <img src="images/woman_graduate_edit.jpg"
         alt="Elizabeth Sanchez Graduate"
         title="Elizabeth Sanchez is getting her degree for Biology "
@@ -61,8 +50,13 @@
         width="536"
         height="434"
         />
+        <figcaption>
+          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+          The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+        </figcaption>
+        </figure>
 
-
+        <figure>
         <img src="images/nelsen_edit.jpg"
         alt="President Nelsen"
         title="Sacramento State's President Nelsen "
@@ -70,56 +64,20 @@
         width="536"
         height="434"
         />
+        <figcaption>
+          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+          The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+        </figcaption>
+        </figure>
 
       </div>
 
 
       </div>
-
-
-
 
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
          <script>
            AOS.init();
-         </script>
-
-
-         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-
-         </script>
-
-
-         <script>
-             var coll = document.getElementsByClassName("collapsible");
-         var i;
-
-         for (i = 0; i < coll.length; i++) {
-           coll[i].addEventListener("click", function() {
-             this.classList.toggle("active");
-             var content = this.nextElementSibling;
-             if (content.style.maxHeight){
-               content.style.maxHeight = null;
-             } else {
-               content.style.maxHeight = content.scrollHeight + "px";
-             }
-           });
-         }
-         </script>
-
-
-         <script>
-
-         var myVar;
-
-         function myFunction() {
-           myVar = setTimeout(showPage, 1000);
-         }
-
-         function showPage() {
-           document.getElementById("loader").style.display = "none";
-           document.getElementById("myDiv").style.display = "block";
-         }
          </script>
 
           </body>
